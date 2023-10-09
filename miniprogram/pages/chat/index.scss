@@ -1,0 +1,22 @@
+.chat{
+
+}
+.header{
+  height: 65px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background: pink;
+}
+.scroll-view{
+  height: calc(100vh - 115px);
+  background: gray;
+  .msg{
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}
+.button-wrap{
+  height: 50px;
+}

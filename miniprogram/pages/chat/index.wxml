@@ -1,0 +1,21 @@
+<view class="chat">
+  <view class="header">
+    <view class="header-left">left</view>
+    <view class="header-slot">slot</view>
+    <view class="header-right">right</view>
+  </view>
+  <scroll-view 
+    id="scroll"
+    type="list"
+    class="scroll-view"
+    reverse
+    scroll-y
+  >
+    <view class="msg" wx:for="{{msgList}}" wx:key="index">
+      {{item.msg}}
+    </view>  
+  </scroll-view>
+  <view class="button-wrap">
+    <button bind:tap="clickButton">add msg</button>
+  </view>
+</view>
